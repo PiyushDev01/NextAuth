@@ -15,10 +15,10 @@ function Nav() {
         <h1 className=' text-3xl font-mono font-semibold' >
             <Link href='/'> <TbBrandAuth0 /> NextAuth</Link>
         </h1>
-        <ul className=' flex items-center gap-3 ' >
+        <ul className=' flex flex-col md:flex-row items-center gap-3 ' >
             <li><Link href='/'>Home</Link></li>
-            <li><Link href='/'>About</Link></li>
-            <li><Link href='/'>Contact</Link></li>
+            <li><Link href='/about'>About</Link></li>
+            <li><Link href='/contact'>Contact</Link></li>
             {
                 status==='authenticated'?(<button 
                     onClick={()=>signOut()}
